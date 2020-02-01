@@ -20,6 +20,21 @@
     <script>
         var tangwei=document.getElementById('tangwei');
         tangwei.style.color='red';
+
+        /**根据标签名查询**/
+        var lis =document.getElementsByTagName('li');
+        // console.log(lis);
+        for(var i=0;i<lis.length;i++){
+            lis[i].style.backgroundColor="#ccc"
+        }
+        /**css选择器选择元素**/
+        var liqingzhao=document.querySelectorAll('p,input');
+        for(var i in liqingzhao){
+            liqingzhao[i].style.border="dashed 1px red";
+        }
+        /**查询ul的第一个子节点**/
+        var li1=ul.firstElementChild;
+        console.log(li1);
     </script>
 </body>
 </html>
